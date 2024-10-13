@@ -1,4 +1,4 @@
-export interface CreateIssueRequest {
+export interface CreateIssueForm {
   title: string;
   description: string;
 }
