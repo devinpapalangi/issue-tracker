@@ -1,4 +1,4 @@
-export interface CreateIssueForm {
-  title: string;
-  description: string;
-}
+import { createIssueSchema } from "@/app/api/issues/_schemas";
+import { z } from "zod";
+
+export type CreateIssueForm = z.infer<typeof createIssueSchema>;
