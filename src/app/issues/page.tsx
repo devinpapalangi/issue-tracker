@@ -9,6 +9,7 @@ import Link from "next/link";
 import { ArrowDownIcon, ArrowUpIcon } from "@radix-ui/react-icons";
 import { IssueQuery } from "./_types";
 import Pagination from "@/components/pagination";
+import { Metadata } from "next";
 
 interface Props {
   searchParams: IssueQuery;
@@ -134,5 +135,10 @@ const IssuesPage = async ({ searchParams }: Props) => {
 };
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Issue Tracker - Issue List",
+  description: "View all project issues",
+};
 
 export default IssuesPage;
