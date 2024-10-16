@@ -1,14 +1,14 @@
 import IssueStatusBadge from "@/components/issue-status-badge";
 import { Table } from "@radix-ui/themes";
 import React from "react";
-import NewIssueActionButton from "./_components/new-issue-action-button";
 import { Skeleton } from "@/components";
+import IssueActions from "./_components/issue-actions";
 
 const IssueLoadingPage = () => {
   const issues = [1, 2, 3, 4, 5];
   return (
     <>
-      <NewIssueActionButton />
+      <IssueActions />
       <Table.Root variant="surface">
         <Table.Header>
           <Table.Row>
