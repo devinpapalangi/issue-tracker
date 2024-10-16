@@ -6,6 +6,7 @@ interface Props {
   count?: number;
   width?: string;
   height?: string;
+  borderRadius?: string;
 }
 const Skeleton = (props: Props) => {
   return <ReactSkeleton {...props} />;
